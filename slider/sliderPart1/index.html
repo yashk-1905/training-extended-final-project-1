@@ -1,0 +1,250 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>Sliders</title>
+
+		<link rel='stylesheet'
+			href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css'>
+		<link rel='stylesheet'
+			href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css'>
+
+		<link rel='stylesheet' href='css/bootstrap.min.css' media='all' />
+		<link rel='stylesheet' href='css/style.css' media='all' />
+		<link rel='stylesheet' href='css/styles.css' media='all' />
+		<link rel='stylesheet' href='css/responsive.css' media='all' />
+	</head>
+	<body>
+		<header>
+			<div class="top-head">
+				<p>Free Shipping on orders over Rs 3000/-</p>
+			</div>
+			<div class="header-top">
+				<div class="container">
+					<a class="navbar-brand" href="../../../frontend/15-4-2023/index.html"><img src="images/jutify-logo.png"
+							alt></a>
+				</div>
+			</div>
+			<nav class="navbar navbar-expand-lg">
+				<div class="container">
+					<button class="navbar-toggler collapsed" type="button"
+						data-toggle="collapse" data-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent" aria-expanded="false"
+						aria-label="Toggle navigation">
+						<span class="icon-bar top-bar"></span>
+						<span class="icon-bar middle-bar"></span>
+						<span class="icon-bar bottom-bar"></span>
+					</button>
+
+					<div class="collapse navbar-collapse nav" id="navbarSupportedContent">
+						<ul class="navbar-nav ml-auto" id="example-one">
+							<li class="nav-item">
+								<a class="nav-link" href="../../../frontend/html/index.html">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="../../../frontend/flexbox/index.html">Our story</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="../../../frontend/flexbox/index2.html">Know your bag</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="../../../frontend/Bootstrap/index.html">Shop</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="../../../frontend/css/index.html">Media</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="../../../frontend/taskhtml/index.html">Contact Us</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+
+		</header>
+
+		<section class="banner main-banner">
+			<div class="container">
+				<!-- DONE USING HTML CSS MANUAL SCROLL -->
+				<div class="carousel" id="slider">
+
+					<input type="radio" name="slider" id="slide1" checked>
+					<input type="radio" name="slider" id="slide2">
+					<input type="radio" name="slider" id="slide3">
+					<input type="radio" name="slider" id="slide4">
+					<div id="slides">
+						<div id="overflow">
+							<div class="inner">
+								<div class="slide slide_1">
+									<div class="slide-content">
+										<img src="./images/banner.png" alt draggable="false">
+									</div>
+								</div>
+								<div class="slide slide_2">
+									<div class="slide-content">
+										<img src="./images/banner.png" alt draggable="false">
+									</div>
+								</div>
+								<div class="slide slide_3">
+									<div class="slide-content">
+										<img src="./images/banner.png" alt draggable="false">
+									</div>
+								</div>
+								<div class="slide slide_4">
+									<div class="slide-content">
+										<img src="./images/banner.png" alt draggable="false">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="controls">
+						<label for="slide1"></label>
+						<label for="slide2"></label>
+						<label for="slide3"></label>
+						<label for="slide4"></label>
+					</div>
+					<div id="bullets">
+						<label for="slide1"></label>
+						<label for="slide2"></label>
+						<label for="slide3"></label>
+						<label for="slide4"></label>
+					</div>
+				</div>
+			</section>
+
+
+			<!-- AUTO SCROLL BAR -->
+			<section class="product-sec">
+				<div class="container">
+					<div class="image-container">
+						<div class="image-wrapper carousel">
+							<div>
+								<img src="./images/product.jpg" alt draggable="false">
+								<h3>Lunch</h3>
+								<a href="javascript:void(0)">Shop now <img src="images/right-arrow.png"
+										alt></a>
+							</div>
+							<div>
+								<img src="./images/product2.jpg" alt draggable="false">
+								<h3>Fashion</h3>
+								<a href="javascript:void(0)">Shop now <img src="images/right-arrow.png"
+										alt></a>
+							</div>
+							<div>
+								<img src="./images/product3.jpg" alt draggable="false">
+								<h3>Festive</h3>
+								<a href="javascript:void(0)">Shop now <img src="images/right-arrow.png"
+										alt></a>
+							</div>
+							<div>
+								<img src="./images/product.jpg" alt draggable="false">
+								<h3>Lunch</h3>
+								<a href="javascript:void(0)">Shop now <img src="images/right-arrow.png"
+										alt></a>
+							</div>
+							<div>
+								<img src="./images/product2.jpg" alt draggable="false">
+								<h3>Fashion</h3>
+								<a href="javascript:void(0)">Shop now <img src="images/right-arrow.png"
+										alt></a>
+							</div>
+							<div>
+								<img src="./images/product3.jpg" alt>
+								<h3>Festive</h3>
+								<a href="javascript:void(0)">Shop now <img src="images/right-arrow.png"
+										alt></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<script src="js/jquery.min.js"></script>
+			<script
+				src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js'></script>
+			<script src="https://kit.fontawesome.com/62ba560d0a.js"
+				crossorigin="anonymous"></script>
+			<script src="js/bootstrap.min.js"></script>
+			<script src="js/common.js"></script>
+
+
+		<!-- ///////////////////////////////////// -->
+		<!-- PRODUCT INFINITE SCROLLING -->
+		<script>
+			const imageWrapper = document.querySelector('.image-wrapper')
+			const imageItems = document.querySelectorAll('.image-wrapper > *')
+			const imageLength = imageItems.length
+			const perView = 3
+			let totalScroll = 0
+			const delay = 2000
+		
+			imageWrapper.style.setProperty('--per-view', perView)
+			for(let i = 0; i < perView; i++) {
+			imageWrapper.insertAdjacentHTML('beforeend', imageItems[i].outerHTML)
+			}
+		
+			let autoScroll = setInterval(scrolling, delay)
+		
+			function scrolling() {
+			totalScroll++
+			if(totalScroll == imageLength + 1) {
+				clearInterval(autoScroll)
+				totalScroll = 1
+				imageWrapper.style.transition = '0s'
+				imageWrapper.style.left = '0'
+				autoScroll = setInterval(scrolling, delay)
+			}
+			const widthEl = document.querySelector('.image-wrapper > :first-child').offsetWidth
+			imageWrapper.style.left = `-${totalScroll * widthEl}px`
+			imageWrapper.style.transition = '.3s'
+			}
+		</script>
+<!-- ///////////////////////////////////// -->
+
+<!-- DRAGGING FUNCTIONALITY -->
+ <script>
+	const carousel = document.querySelector(".carousel");
+	let isDragStart = false, isDragging = false,
+	prevPageX,
+	prevScrollLeft,
+	positionDiff;
+	const dragStart = (e) => {
+	// updating global variables value on mouse down event
+	isDragStart = true;
+	prevPageX = e.pageX || e.touches[0].pageX;
+	prevScrollLeft = carousel.scrollLeft;
+	};
+
+	const dragging = (e) => {
+	// scrolling images/carousel to left according to mouse pointer
+	if (!isDragStart) return;
+	e.preventDefault();
+	isDragging = true;
+	carousel.classList.add("dragging");
+	positionDiff = (e.pageX || e.touches[0].pageX) - prevPageX;
+	carousel.scrollLeft = prevScrollLeft - positionDiff;
+	};
+
+	const dragStop = () => {
+	isDragStart = false;
+	carousel.classList.remove("dragging");
+
+	if (!isDragging) return;
+	isDragging = false;
+	autoSlide();
+	};
+	carousel.addEventListener("mousedown", dragStart);
+	carousel.addEventListener("touchstart", dragStart);
+
+	carousel.addEventListener("mousemove", dragging);
+	carousel.addEventListener("touchmove", dragging);
+
+	carousel.addEventListener("mouseup", dragStop);
+	carousel.addEventListener("mouseleave", dragStop);
+	carousel.addEventListener("touchend", dragStop);
+	</script>
+
+	</body>
+</html>

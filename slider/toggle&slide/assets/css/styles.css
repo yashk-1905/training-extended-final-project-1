@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=Bigelow+Rules&family=Bitter&family=Nunito+Sans:wght@300;400&family=Open+Sans:wght@300&family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bigelow+Rules&family=Bitter&family=Nunito+Sans:wght@300;400&family=Open+Sans:wght@300&family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bigelow+Rules&family=Bitter&family=Nunito+Sans:wght@300&family=Open+Sans:wght@300&family=Poppins&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  font-family: "Radikal";
+  line-height: 1.25;
+  font-weight: 300;
+  color: #262626;
+  position: relative;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  border: 0;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+
+*:hover,
+*:focus,
+*:active {
+  transition: all ease-out 0.3s;
+  text-decoration: none;
+}
+
+*:focus {
+  box-shadow: none;
+  outline: 0 !important;
+}
+
+a {
+  outline: none !important;
+  text-decoration: none;
+}
+
+a,
+input,
+button,
+textarea,
+a:focus,
+select:focus {
+  outline: none;
+  text-decoration: none !important;
+}
+
+button,
+input,
+textarea {
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+a,
+button {
+  transition: all ease-out 0.3s;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+header .container {
+  margin-bottom: 100px;
+}
+header .container nav .logo {
+  display: flex;
+  align-items: center;
+}
+header .container nav .logo img {
+  width: 179.5px;
+}
+@media (max-width: 991px) {
+  header .container nav .list {
+    background-color: #000000;
+    width: 100%;
+    offset: 0;
+    /*
+    #IMPORTANT
+    yahan par padding dene ke karan 
+    nav ko responsive me khulne me 
+    problem ho rahi hai 
+    is liye padding better hai ki 
+    ul me do
+    **/
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 70px;
+    z-index: 22;
+  }
+}
+header .container nav .list ul {
+  list-style: none;
+  display: flex;
+  /*
+  #IMPORTANT
+  * yahan padding de do list me mat do 
+  * taki flick naa aaye khulne me nav 
+  * ko responsive ke andar
+  **/
+  padding: 5rem;
+  gap: 30px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+header .container nav .list ul li.nav-item a.nav-link {
+  text-decoration: none;
+  color: #1B2339;
+  font-family: "Nunito Sans";
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 19px;
+}
+@media (max-width: 991px) {
+  header .container nav .list ul li.nav-item a.nav-link {
+    color: white;
+    border-bottom: 1px solid pink;
+  }
+}
+header .container nav .list ul li.nav-item a.nav-link:hover {
+  color: #0C5CE6;
+}
+header .container nav .list ul li.nav-item button {
+  height: 38px;
+  width: 102.34px;
+  border-radius: 30px;
+  border: none;
+  font-family: "Nunito Sans";
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0;
+  line-height: 19px;
+  cursor: pointer;
+}
+header .container nav .list ul li.nav-item .logIn a {
+  text-decoration: none;
+  color: #000000;
+}
+header .container nav .list ul li.nav-item .signUp {
+  background-color: #0C5CE6;
+}
+header .container nav .list ul li.nav-item .signUp a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.growth .container {
+  display: flex;
+  gap: 60px;
+}
+@media (max-width: 767px) {
+  .growth .container {
+    flex-direction: column-reverse;
+  }
+}
+.growth .container .leftSide {
+  max-width: 50%;
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .growth .container .leftSide {
+    max-width: 100%;
+  }
+}
+.growth .container .leftSide .leftUp h1 {
+  color: #1B2339;
+  font-family: Bitter;
+  font-size: 45px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 67px;
+  margin-bottom: 12px;
+}
+@media (max-width: 991px) {
+  .growth .container .leftSide .leftUp h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+.growth .container .leftSide .leftUp h1 span {
+  height: 15px;
+  width: 336px;
+  box-shadow: inset 0 -0.4em 0 0 rgba(255, 189, 153, 0.9);
+}
+.growth .container .leftSide .leftUp p {
+  color: #151A28;
+  font-family: "Nunito Sans";
+  font-size: 20px;
+  font-style: italic;
+  letter-spacing: 0;
+  line-height: 31px;
+}
+@media (max-width: 767px) {
+  .growth .container .leftSide .leftUp p {
+    font-size: 17px;
+    line-height: 25px;
+  }
+}
+.growth .container .leftSide .leftDown .slider {
+  height: 250px;
+}
+.growth .container .leftSide .leftDown .slider .card {
+  height: 250px !important;
+  padding: 2px;
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+  margin: 5px;
+}
+.growth .container .leftSide .leftDown .slider .card img {
+  width: 54px;
+  height: 56px;
+}
+.growth .container .leftSide .leftDown .slider .card p {
+  color: #1B2339;
+  font-family: "Nunito Sans";
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 25px;
+}
+.growth .container .rightSide {
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+}
+.growth .container .rightSide img {
+  width: 100%;
+}
+@media (max-width: 991px) {
+  .growth .container .rightSide {
+    margin: 0 auto;
+  }
+}
+
+.slick-dots li {
+  display: inline-block;
+  padding: 1px;
+  background-color: #ccc;
+  margin: 10px 5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.slick-dots button {
+  display: none;
+}
+
+.slick-dots li.slick-active {
+  height: 8px;
+  width: 35px;
+  border-radius: 4px;
+  background-color: #FF8143;
+}
+
+.slick-slider img {
+  width: 100%;
+  height: 250px;
+}/*# sourceMappingURL=styles.css.map */

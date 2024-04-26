@@ -1,0 +1,90 @@
+$color_1: #fff;
+$font-family_1: 'Roboto', sans-serif;
+
+@import "https://fonts.googleapis.com/css2?family=Noto+Serif&family=Roboto:wght@300;500&display=swap";
+* {
+	font-family: $font-family_1;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: linear-gradient(160deg, rgba(72,63,102,1) 44%, rgba(185,173,219,1) 90%);
+	padding: 0 35px;
+}
+.wrapper {
+	position: relative;
+	max-width: 1200px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	i {
+		height: 50px;
+		width: 50px;
+		text-align: center;
+		cursor: pointer;
+		font-size: 1.3rem;
+		line-height: 46px;
+		border-radius: 50%;
+		color: $color_1;
+		background: linear-gradient(to bottom, #856077, #b9addb);
+		box-shadow: 0 8px 20px rgba(0,0,0,0.5), inset 0px 4px 4px rgba(255,255,255,0.2);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transition: all 0.1s ease-in-out;
+		&:active {
+			transform: scale(1.03);
+		}
+	}
+	.carousel {
+		white-space: nowrap;
+		font-size: 0;
+		overflow: hidden;
+		cursor: pointer;
+		scroll-behavior: smooth;
+	}
+}
+.arrows {
+	position: absolute;
+	display: flex;
+	gap: 20px;
+	transform: translateY(50%);
+	bottom: -20%;
+}
+.carousel.dragging {
+	cursor: grab;
+	scroll-behavior: auto;
+	img {
+		pointer-events: none;
+	}
+}
+.carousel {
+	img {
+		height: 340px;
+		width: calc(100% / 3);
+		object-fit: cover;
+		margin-left: 14px;
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+}
+@media screen and (max-width: 900px) {
+	.carousel {
+		img {
+			width: calc(100% / 2);
+		}
+	}
+}
+@media screen and (max-width: 550px) {
+	.carousel {
+		img {
+			width: 100%;
+		}
+	}
+}

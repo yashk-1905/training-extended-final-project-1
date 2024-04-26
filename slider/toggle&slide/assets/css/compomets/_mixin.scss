@@ -1,0 +1,53 @@
+// Responsive Breakpoints
+$breakpoints: (
+    small-phone: 479px,    
+    phone: 767px,
+    tablet: 991px,
+    iPad: 1199px,
+    laptop: 1230px,
+    largeLaptop: 1399px,
+    desktop: 1500px,
+    desktop-large: 1600px,
+);
+@mixin breakpoint($name) {
+    @each $label, $size in $breakpoints {
+        @if $name == $label {
+            @media (max-width: $size) {
+                @content;
+            }
+        }
+    }
+}
+
+
+
+//for topButtons
+@mixin topButtons{
+    height: 38px;
+    width: 102.34px;
+    border-radius: 30px;
+    border: none;
+    font-family: $nunito;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 0;
+    line-height: 19px;
+    cursor: pointer;
+}
+
+//mim breakpoints if needed 
+
+
+$min-breakpoints: (
+    desktop-small: 768px,
+    desktop-tablet: 992px
+);
+@mixin min-breakpoint($name) {
+    @each $label, $size in $min-breakpoints {
+        @if $name == $label {
+            @media (min-width: $size) {
+                @content;
+            }
+        }
+    }
+}
